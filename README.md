@@ -1,5 +1,19 @@
 
+This is the client side of GeoCaching application, to run it properly, please start also the server side.
+Before the first use, run 'npm install' in the project directory, as node_modules are not stored on github.
+To run the application use 'npm start' command instead of 'ng serve'. 
 
+Main functionalities:
+-viewing map of all points on the 'Main Map'
+-viewing points list with all points description, map location etc. as well as option of deleting the point or editing the point
+-adding the new point 
+
+Technologies used:
+Angular 5.2.9.
+Angular Google Maps (AGM)
+Bootstrap v3
+Spring Boot 1.5.10.RELEASE
+Hibernate + MySQL data base
 
 Auto generated readme file below:
 
