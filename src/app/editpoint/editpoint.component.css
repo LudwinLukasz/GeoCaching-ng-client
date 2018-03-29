@@ -1,0 +1,10 @@
+agm-map {
+  height: 300px;
+}
+
+.alert {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  text-align: center;
+}

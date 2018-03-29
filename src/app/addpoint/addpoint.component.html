@@ -1,0 +1,97 @@
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h4>Add a new point</h4>
+  </div>
+  <div class="panel-body">
+    <form #newPointForm="ngForm" (ngSubmit)="onPointSubmit(newPointForm.value)">
+      <div class="form-group col-sm-4">
+        <label for="name" class="">Name</label>
+        <input
+          type="text"
+          class="form-control"
+          placeholder="Name"
+          name="name"
+          [(ngModel)]="name"
+        required>
+      </div>
+      <div class="form-group col-sm-4">
+        <label for="owner" class="">Owner</label>
+        <input
+          class="form-control"
+          type="text"
+          placeholder="owner"
+          name="owner"
+          [(ngModel)]="owner"
+        required>
+      </div>
+      <div class="form-group col-sm-2">
+        <label for="latitude" class="">Latitude</label>
+        <input
+          type="number"
+          class="form-control"
+          placeholder="Latitude"
+          name="latitude"
+          [(ngModel)]="latitude"
+        required>
+      </div>
+      <div class="form-group col-sm-2">
+        <label for="longitude" class="">Longitude</label>
+        <input
+          type="number"
+          class="form-control"
+          placeholder="Longitude"
+          name="longitude"
+          [(ngModel)]="longitude"
+         required>
+      </div>
+      <div class="form-group col-sm-6">
+        <label for="description" class="">Desciption</label>
+        <textarea
+          type="text"
+          class="form-control"
+          placeholder="Description"
+          name="description"
+          [(ngModel)]="description"
+          required>
+        </textarea>
+      </div>  
+      <div class="form-group col-sm-2">
+        <label for="hint" class="">Hint</label>
+        <input
+          type="text"
+          class="form-control"
+          placeholder="Hint"
+          name="hint"
+          [(ngModel)]="hint"
+        required>
+      </div>
+      <div class="form-group col-sm-4">
+        <label for="userslist" class="">List of Visitors</label>
+        <textarea
+          type="text"
+          class="form-control"
+          placeholder="Users"
+          name="userslist"
+          [(ngModel)]="userslist"
+          required>
+        </textarea>
+      </div>
+      <div class="form-group col-sm-12">
+        <button
+          class="btn btn-primary listing-button"
+          type="submit"
+          ng-show="addPoint">
+          Add
+        </button>
+      </div>
+    </form>
+  </div>  
+</div>
+<div *ngIf="lat" class="panel panel-default">
+  <agm-map [latitude]="lat" [longitude]="lng">
+    <agm-marker [latitude]="lat" [longitude]="lng"></agm-marker>
+  </agm-map>
+</div>
+<div *ngIf="success" class="col-sm-3 alert alert-success">
+  <strong>Added!</strong>
+</div>

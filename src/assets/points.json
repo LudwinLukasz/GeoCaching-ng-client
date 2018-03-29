@@ -1,0 +1,23 @@
+[
+    {
+        "id": 1,
+        "name": "Różowy Lasek",
+        "latitude": 49.778418,
+        "longitude": 20.809007,
+        "owner": "Franek",
+        "hint": "zgadniaj",
+        "description": "sxlksxsmxksxskxs sxlksxsmxksxskxs sxlksxsmxksxskxs sxlksxsmxksxskxs",
+        "userslist": "Ala, Cela, Bela"
+    },
+    {
+        "id": 2,
+        "name": "niebieniu Lasek",
+        "latitude": 49.078418,
+        "longitude": 20.109007,
+        "owner": "Zigi",
+        "hint": "zgadniaj",
+        "description": "sxlksxsmxksxskxs sxlksxsmxksxskxs sxlksxsmxksxskxs sxlksxsmxksxskxs",
+        "userslist": "Ala, Cela, Bela"
+    }
+]
+ 
